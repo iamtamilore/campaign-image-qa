@@ -1,0 +1,70 @@
+SUBJECT A — IDENTITY SPEC (REF 3 level)
+Extracted from: new_hero.jpeg (Pinterest seed)
+Date: 2026-07-01
+================================================================================
+
+FACE STRUCTURE
+  Gender:      Male
+  Build:       Lean, angular jaw, high cheekbones, defined bone structure
+  Jaw:         Strong, sharp, slightly tapered chin
+  Cheekbones:  High and defined
+
+SKIN
+  Tone:        Cool pale — fair with neutral-cool undertone, no warmth
+  Texture:     Natural visible pores, slight freckles scattered across nose bridge
+               and upper cheeks, subtle under-eye shadow, not airbrushed
+  Imperfections: Light freckle pattern on nose/cheeks (keep these — they are identity markers)
+
+EYES
+  Colour:      Blue-grey, muted, not vivid blue — more steel/slate grey
+  Shape:       Slightly deep-set, narrow horizontal, heavy upper lid
+  Expression:  Completely unbothered, jaw relaxed, looking straight at camera
+
+NOSE
+  Profile:     Straight, narrow bridge, slightly defined tip
+
+LIPS
+  Colour:      Natural bare — slightly pink-beige, no gloss
+  Shape:       Medium fullness, defined cupid's bow
+
+HAIR
+  Colour:      Dark chocolate brown, nearly black at roots
+  Texture:     Tight curls, medium density, wet-set look (curls clumped, defined)
+  Style:       Short-medium length, curls fall forward onto forehead
+  Hairline:    Clean, sharp hairline at temples
+
+OUTFIT (for character sheet consistency)
+  Top:         Black crew-neck t-shirt, minimal, no logo
+  Neckline:    Clean crew neck, no accessories visible
+
+DISTINCTIVE FEATURES (what makes Subject A recognisable across shots)
+  1. Steel-blue-grey eyes — specific, not generic blue
+  2. Scattered freckles on nose bridge — natural, light
+  3. Wet-set tight dark curls — specific curl pattern
+  4. Strong angular jaw with high cheekbones
+
+BOPA PRE-CHECK
+  B (Background):  Neutral grey studio — #808080 equivalent, even diffused lighting
+  O (Outfit):      Black crew-neck t-shirt — consistent across ALL angles
+  P (Poses):       Neutral upright posture, head level, jaw relaxed, unbothered expression
+  A (Angles):      ORDER → 3/4 left → 3/4 right → profile left → profile right → back → front last
+
+ANGLE SHOT MATRIX
+  3/4 left:       Head turned ~45° left, both eyes visible, left side dominant
+  3/4 right:      Head turned ~45° right, both eyes visible, right side dominant
+  profile left:   Camera directly left of subject, aimed at left ear/cheek, zero face visible from right
+  profile right:  Camera directly right of subject, aimed at right ear/cheek, zero face visible from left
+  back:           Camera directly behind, zero face, back of neck + curls visible
+  front (last):   Full face, head straight to camera — generate LAST, highest consistency demand
+
+BASE PROMPT CORE (embed in every angle generation)
+  "Keep the face from the reference image exactly.
+   Male, cool pale skin with scattered freckles on nose bridge and cheeks.
+   Steel blue-grey eyes, heavy-lidded, completely unbothered expression.
+   Dark chocolate-brown tight curls, wet-set, medium length falling forward.
+   Strong angular jaw, high cheekbones, sharp defined nose.
+   Black crew-neck t-shirt. Neutral grey studio background, even diffused light.
+   Natural skin texture, visible pores, no airbrushing.
+   [ANGLE INSTRUCTION HERE]
+   Portrait/vertical orientation. ONE image only.
+   Do NOT generate a side-by-side, comparison shot, or turnaround."

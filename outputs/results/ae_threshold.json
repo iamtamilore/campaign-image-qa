@@ -1,0 +1,9 @@
+{
+  "threshold_mse": 0.005033296998590231,
+  "percentile": 95,
+  "train_mse_mean": 0.004020704422146082,
+  "train_mse_std": 0.0006598140462301672,
+  "n_training_images": 85,
+  "final_val_loss": 0.01020802091807127,
+  "training_time_s": 48.8
+}

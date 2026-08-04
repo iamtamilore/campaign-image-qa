@@ -1,0 +1,83 @@
+SUBJECT B — IDENTITY SPEC (REF 3 level)
+Extracted from: new_hero2.jpg (Pinterest seed)
+Date: 2026-07-01
+================================================================================
+
+FACE STRUCTURE
+  Gender:      Female
+  Build:       Oval face, soft jaw, defined but not angular cheekbones
+  Jaw:         Soft, rounded, feminine
+  Cheekbones:  Gently defined, not sharp
+
+SKIN
+  Tone:        Warm honey-gold with golden undertone — East Asian complexion
+               NOT pale, NOT cool — warm and luminous
+  Texture:     Visible natural pores, dewy/fresh skin, no airbrushing, light natural glow
+  Imperfections: Natural skin texture, subtle warmth, fine pores visible at close range
+
+EYES
+  Colour:      Dark brown, near-black iris, warm depth
+  Shape:       Almond-shaped, slight upturn at outer corner, natural Asian eye shape
+               No double eyelid crease visible — single eyelid or subtle crease
+  Lashes:      Long, natural, no heavy makeup — natural lash line
+  Expression:  Intense, composed, completely unbothered
+
+NOSE
+  Profile:     Soft, slightly rounded tip, low-medium bridge
+
+LIPS
+  Colour:      Natural bare — warm nude-pink
+  Shape:       Full, slightly parted, soft
+
+HAIR
+  Colour:      Blue-black, very dark brown at ends
+  Texture:     Fine-medium, straight with slight movement, wispy
+  Style:       Textured curtain/wispy bangs — individual separated strands falling across forehead
+               Rest of hair in loose messy updo — some strands escaping, natural movement
+  Hairline:    Soft, with wispy baby hairs
+
+ACCESSORIES (IDENTITY ANCHORS — must appear in all shots)
+  Earrings:    Large silver hoop earrings — wide diameter circle, thin gauge silver wire
+               One visible on each side, resting against side of neck/jaw
+  Necklace:    Layered chain necklace, silver — thin delicate chain(s), visible at collarbone
+               IMPORTANT: keep both earrings and necklace in all angle shots — they are identity markers
+
+OUTFIT (for character sheet consistency)
+  Top:         Grey halter/spaghetti strap — neutral grey, minimal, bare shoulders
+  Shoulders:   Bare, skin visible from collarbone down
+
+DISTINCTIVE FEATURES (what makes Subject B recognisable across shots)
+  1. Wispy separated curtain bangs — not blunt fringe, individual strands
+  2. Large silver hoop earrings — specific, wide circle
+  3. Warm honey-gold skin tone — NOT pale, not cool
+  4. Dark almond-shaped eyes with natural lashes
+  5. Loose messy updo with escaping strands
+
+BOPA PRE-CHECK
+  B (Background):  Neutral grey studio — #808080 equivalent, even diffused lighting
+  O (Outfit):      Grey halter top, large silver hoops, layered silver chain necklace
+  P (Poses):       Neutral upright posture, head level, jaw relaxed, unbothered expression
+  A (Angles):      ORDER → 3/4 left → 3/4 right → profile left → profile right → back → front last
+
+ANGLE SHOT MATRIX
+  3/4 left:       Head turned ~45° left, both eyes visible, left earring dominant
+  3/4 right:      Head turned ~45° right, both eyes visible, right earring dominant
+  profile left:   Camera directly left, aimed at left ear/hoop, right side of face hidden
+  profile right:  Camera directly right, aimed at right ear/hoop, left side of face hidden
+  back:           Camera directly behind, loose updo + escaping strands visible from above
+  front (last):   Full face, head straight to camera — generate LAST, highest consistency demand
+
+BASE PROMPT CORE (embed in every angle generation)
+  "Keep the face from the reference image exactly.
+   Female, warm honey-gold East Asian skin tone with natural golden undertone.
+   Dark brown almond-shaped eyes, natural single-lid, long natural lashes.
+   Wispy separated curtain bangs falling across forehead — individual strands, not a blunt fringe.
+   Hair in loose messy updo with escaping strands.
+   Large silver hoop earrings — wide circular, thin gauge, must be visible.
+   Layered thin silver chain necklace at collarbone — must be visible.
+   Grey halter top, bare shoulders.
+   Neutral grey studio background, even diffused light.
+   Natural skin texture, visible pores, natural dewy glow, no airbrushing.
+   [ANGLE INSTRUCTION HERE]
+   Portrait/vertical orientation. ONE image only.
+   Do NOT generate a side-by-side, comparison shot, or turnaround."

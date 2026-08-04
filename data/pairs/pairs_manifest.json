@@ -1,0 +1,3602 @@
+[
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_back_3.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileright_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qright_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_3qleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_4.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_5.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_profileleft_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_back_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_2.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_profileright_1.png",
+    "label": 1,
+    "pair_type": "positive"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_3.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+    "img_b": "data/subject_B/styled/gpt-2-test_hero_3qright_4.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/flux-2-test_hero_profileleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileleft_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_3qleft_5.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_A/hero_ref/new_hero.jpeg",
+    "img_b": "data/subject_B/styled/flux-2-test_hero_3qright_2.png",
+    "label": 0,
+    "pair_type": "negative"
+  },
+  {
+    "img_a": "data/subject_B/hero_ref/hero_front_flux2test.png",
+    "img_b": "data/subject_A/styled/gpt-2-test_hero_back_1.png",
+    "label": 0,
+    "pair_type": "negative"
+  }
+]

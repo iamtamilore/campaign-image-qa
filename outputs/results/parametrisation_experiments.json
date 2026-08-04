@@ -1,0 +1,97 @@
+{
+  "exp1_siamese_threshold": {
+    "default_0.5_test": {
+      "precision": 1.0,
+      "recall": 0.8222,
+      "f1": 0.9024
+    },
+    "tuned_threshold": 0.4821,
+    "tuned_val_f1": 1.0,
+    "tuned_test": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "test_roc_auc": 1.0
+  },
+  "exp2_knn_distance_threshold": {
+    "dist_thr_0.4": {
+      "precision": 1.0,
+      "recall": 0.2222,
+      "f1": 0.3636
+    },
+    "dist_thr_0.5": {
+      "precision": 1.0,
+      "recall": 0.3111,
+      "f1": 0.4746
+    },
+    "dist_thr_0.6": {
+      "precision": 1.0,
+      "recall": 0.5778,
+      "f1": 0.7324
+    },
+    "dist_thr_0.7": {
+      "precision": 1.0,
+      "recall": 0.9556,
+      "f1": 0.9773
+    },
+    "dist_thr_0.8": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "exp2_note": "Baseline's k parameter is vestigial: predict_pair uses only the Euclidean distance rule (face_recognition 0.6 convention). Distance threshold is the operative hyperparameter.",
+  "exp3_ae_percentile": {
+    "compliant_mean_mse": 0.003737,
+    "compliant_std_mse": 0.002907,
+    "non_compliant_mean_mse": 0.008648,
+    "non_compliant_std_mse": 0.003483,
+    "n_compliant": 100,
+    "n_non_compliant": 34,
+    "percentiles": {
+      "pct_90": {
+        "threshold_mse": 0.006808,
+        "false_alarm_rate": 0.1,
+        "drift_recall": 0.6176
+      },
+      "pct_95": {
+        "threshold_mse": 0.010276,
+        "false_alarm_rate": 0.05,
+        "drift_recall": 0.2647
+      },
+      "pct_99": {
+        "threshold_mse": 0.015808,
+        "false_alarm_rate": 0.01,
+        "drift_recall": 0.0294
+      }
+    }
+  },
+  "exp4_embedding_dim": {
+    "dim_128": {
+      "test": {
+        "precision": 1.0,
+        "recall": 0.8222,
+        "f1": 0.9024
+      },
+      "test_roc_auc": 1.0,
+      "note": "existing siamese_best.keras"
+    },
+    "dim_64": {
+      "test": {
+        "precision": 1.0,
+        "recall": 0.8444,
+        "f1": 0.9157
+      },
+      "test_roc_auc": 1.0
+    },
+    "dim_256": {
+      "test": {
+        "precision": 1.0,
+        "recall": 0.9333,
+        "f1": 0.9655
+      },
+      "test_roc_auc": 1.0
+    }
+  }
+}

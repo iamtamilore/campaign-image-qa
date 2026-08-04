@@ -1,0 +1,42 @@
+{
+  "model": "siamese",
+  "n_false_positive": 0,
+  "n_false_negative": 8,
+  "grade_breakdown": {
+    "false_positives": {},
+    "false_negatives": {
+      "unknown": 8
+    }
+  },
+  "fp_examples": [],
+  "fn_examples": [
+    {
+      "pair_index": 0,
+      "img_a": "data/subject_A/hero_ref/hero_front_gpt2test.png",
+      "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_5.png",
+      "grade": "unknown",
+      "error_type": "false_negative"
+    },
+    {
+      "pair_index": 2,
+      "img_a": "data/subject_B/hero_ref/new_hero2.jpg",
+      "img_b": "data/subject_B/styled/flux-2-test_hero_profileright_1.png",
+      "grade": "unknown",
+      "error_type": "false_negative"
+    },
+    {
+      "pair_index": 8,
+      "img_a": "data/subject_B/hero_ref/hero_front_gpt2test.png",
+      "img_b": "data/subject_B/styled/gpt-2-test_hero_back_1.png",
+      "grade": "unknown",
+      "error_type": "false_negative"
+    },
+    {
+      "pair_index": 33,
+      "img_a": "data/subject_A/hero_ref/hero_front_flux2test.png",
+      "img_b": "data/subject_A/styled/flux-2-test_hero_profileright_4.png",
+      "grade": "unknown",
+      "error_type": "false_negative"
+    }
+  ]
+}

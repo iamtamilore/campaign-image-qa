@@ -1,3 +1,6 @@
+> **[Read the full write-up](https://iamtamilore.github.io/p/image-qa/)** with diagrams, plots and results.
+> Part of [Taiwo Alabi's work](https://iamtamilore.github.io).
+
 # Automated QA Gate for AI-Generated Campaign Images
 
 **Catches the moment an AI-generated model stops being the same person.**

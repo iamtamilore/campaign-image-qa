@@ -1,25 +1,3 @@
-"""
-siamese.py - the twins with one brain: my network for same-person-or-not verification.
-
-"siamese" sounds like two networks but it is ONE fingerprint machine used TWICE - 
-same doctor, same eyes, holding one photo in each hand. if two different doctors
-examined the photos, their notes would not be comparable.
-
-architecture:
-  photo A ─→ ┐
-             ├─ SAME frozen ResNet50 arm (shared weights) → two 128-number fingerprints
-  photo B ─→ ┘
-  → L1 distance (the 128 differences) → Dense(1, sigmoid) → probability of same person [0,1]
-
-loss: binary cross-entropy (contrastive loss variant discussed in CA1 §IV)
-threshold: 0.5 by default (experiment 4.1 later tuned it to 0.4821 on validation → F1 1.0)
-
-references (CA1 §IV):
-  [1] Schroff et al., FaceNet (2015)
-  [2] Koch et al., Siamese one-shot (2015)
-  [6] Chopra et al., contrastive loss (2005)
-"""
-
 #fallback if the import below fails; normally overwritten by the backbone import
 EMBEDDING_DIM = 128
 
@@ -29,7 +7,7 @@ try:
     from tensorflow.keras.layers import Dense
     from src.models.backbone import build_embedding_network, EMBEDDING_DIM
 except ImportError:
-    print("[warn] TensorFlow not installed - pip install tensorflow")
+    print("[warn] TensorFlow not installed, pip install tensorflow")
 
 
 class L1Distance(tf.keras.layers.Layer):
@@ -37,7 +15,7 @@ class L1Distance(tf.keras.layers.Layer):
     def call(self, inputs):
         return tf.abs(inputs[0] - inputs[1])
 
-    #keras calls this itself when saving/loading the model - do not delete
+    #keras calls this itself when saving/loading the model, do not delete
     def compute_output_shape(self, input_shape):
         return input_shape[0]
 
@@ -45,7 +23,7 @@ class L1Distance(tf.keras.layers.Layer):
 def build_siamese_model(input_shape: tuple = (224, 224, 3),
                         embedding_dim: int = EMBEDDING_DIM) -> "Model":
     "two photos in → probability they show the same subject [0,1]"
-    #build the fingerprint machine ONCE - this is the whole siamese trick
+    #build the fingerprint machine ONCE, this is the whole siamese trick
     embedding_net = build_embedding_network(embedding_dim=embedding_dim)
 
     #two doors for the two photos
@@ -59,7 +37,7 @@ def build_siamese_model(input_shape: tuple = (224, 224, 3),
     #the 128 differences: same person → mostly tiny, different people → many big
     l1_dist = L1Distance(name="l1_distance")([emb_a, emb_b])
 
-    #the judgement - the ONLY layer here that learns: WHICH differences matter.
+    #the judgement, the ONLY layer here that learns: WHICH differences matter.
     #sigmoid squashes the verdict to a 0-1 probability
     out = Dense(1, activation="sigmoid", name="same_subject_prob")(l1_dist)
 

@@ -1,23 +1,3 @@
-"""
-run_qa_pipeline.py - the conductor: runs my whole QA system end to end.
-(main.py at the project root forwards here - this is what the marker runs.)
-
-the full KDD/CRISP-DM pipeline, stage by stage:
-  Phase 1+2 - Data Understanding + Preparation : build the 600 pairs
-  Phase 3 - Modelling                        : train siamese + autoencoder
-  Phase 4+5 - Evaluation + Error Analysis      : metrics, ROC, confusion matrix, the 8 misses
-  Phase 6 - Deployment (QA mode)             : pass/fail verdict on ONE new image
-
-usage:
-  python main.py --phase eval                     # reproduce all reported numbers (~1 min)
-  python main.py --phase all                      # retrain from scratch first (~10 min)
-  python main.py --phase data                     # rebuild the pair manifest only
-  python main.py --phase train                    # train both models only
-  python main.py --phase qa --test-image img.png  # QA one new image
-
-every number is reproducible: all randomness is seeded (42) below.
-"""
-
 import argparse, json, sys
 from pathlib import Path
 
@@ -30,7 +10,7 @@ _os.chdir(_ROOT)
 # ─────────────────────────────────────────────────────────────────────────────
 
 # ── fix every source of randomness so each run reproduces the same numbers ──
-# (augmentation uses np.random, tf shuffles batches - both must be seeded)
+# (augmentation uses np.random, tf shuffles batches, both must be seeded)
 import random
 import numpy as np
 random.seed(42)
@@ -47,7 +27,7 @@ def phase_data():
     "phase 1+2: build the 600 flashcards from the 106 images (see src/data/pair_builder.py)"
     print("\n=== PHASE 1+2: Data Understanding + Preparation ===")
     from src.data.pair_builder import build_pairs
-    #asks for 800 but only 600 exist - takes everything, perfectly balanced 300/300
+    #asks for 800 but only 600 exist, takes everything, perfectly balanced 300/300
     pairs = build_pairs(data_dir="data", target_pairs=800)
     print(f"[pipeline] {len(pairs)} pairs built.")
     return pairs
@@ -69,7 +49,7 @@ def phase_train():
 
 
 def phase_eval():
-    "phase 4+5: exam day - all 3 models sit the same sealed 90-pair test, then the post-mortem"
+    "phase 4+5: exam day, all 3 models sit the same sealed 90-pair test, then the post-mortem"
     print("\n=== PHASE 4+5: Evaluation + Error Analysis ===")
     import numpy as np
     import tensorflow as tf
@@ -82,7 +62,7 @@ def phase_eval():
     #my custom layers must be handed to keras by name or the saved model wont load
     _custom = {"L2Normalize": L2Normalize, "L1Distance": L1Distance}
 
-    #deal the stacks - same seed as training, so the sealed test cards are the same 90
+    #deal the stacks, same seed as training, so the sealed test cards are the same 90
     dataset    = PairDataset()
     test_pairs = dataset.test_pairs
 
@@ -108,7 +88,7 @@ def phase_eval():
 
     # ── student B: pixel-diff (the tracing-paper kid) ───────────────────────
     from PIL import Image
-    #raw pixels, no ImageNet prep - this baseline compares pictures directly
+    #raw pixels, no ImageNet prep, this baseline compares pictures directly
     def _load_raw(path):
         return np.array(Image.open(path).convert("RGB").resize((224, 224)))
 
@@ -129,7 +109,7 @@ def phase_eval():
         arrs = np.array([load_and_preprocess(p["img_a"]) for p in pair_list])
         return emb_model.predict(arrs, verbose=0)
 
-    #'fit' just stores the training fingerprints - kNN never learns (lazy learner)
+    #'fit' just stores the training fingerprints, kNN never learns (lazy learner)
     knn = KNNEmbeddingClassifier(k=5)
     knn.fit(_emb(train_pairs), np.array([p["label"] for p in train_pairs]))
 
@@ -148,7 +128,7 @@ def phase_eval():
 
 def phase_qa(test_image: str):
     "phase 6 (deployment): one new image in → siamese identity check + AE grade check → JSON verdict out"
-    print(f"\n=== PHASE 6: QA Mode - {test_image} ===")
+    print(f"\n=== PHASE 6: QA Mode, {test_image} ===")
     import numpy as np, tensorflow as tf
     from src.data.preprocessing import load_and_preprocess
     from src.models.autoencoder import reconstruction_error, AE_IMG_SIZE
@@ -180,11 +160,11 @@ def phase_qa(test_image: str):
     hero_emb  = load_and_preprocess(str(hero_refs[0]))
     test_emb  = load_and_preprocess(test_image)
 
-    #guard 1 - siamese: same person as the hero?
+    #guard 1, siamese: same person as the hero?
     score     = float(siamese.predict(
         [np.expand_dims(hero_emb, 0), np.expand_dims(test_emb, 0)], verbose=0)[0][0])
 
-    #guard 2 - autoencoder: is the look/grade right? (0-1 pixels for the sigmoid decoder)
+    #guard 2, autoencoder: is the look/grade right? (0-1 pixels for the sigmoid decoder)
     from PIL import Image
     img_ae = np.array(Image.open(test_image).convert("RGB").resize(AE_IMG_SIZE)) / 255.0
     mse    = float(reconstruction_error(ae, np.expand_dims(img_ae, 0))[0])
@@ -205,7 +185,7 @@ def phase_qa(test_image: str):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Mullay QA Pipeline - CA2 x24335592")
+    parser = argparse.ArgumentParser(description="Mullay QA Pipeline, CA2 x24335592")
     parser.add_argument("--phase", choices=["all", "data", "train", "eval", "qa"],
                         default="all")
     parser.add_argument("--test-image", default=None,

@@ -1,28 +1,3 @@
-"""
-baselines.py - the two opponents my siamese had to beat.
-
-a fancy model only earns its place by beating something simpler. these two
-define the floor: if the siamese cant beat a tracing-paper comparison and a
-plain ruler, the deep learning was pointless.
-
-opponent 1: pixel-difference detector (the tracing-paper kid)
-  the EXISTING Mullay pipeline tool (CA1 §II). put one photo on top of the
-  other, check how different each pixel is. fatal flaw: ANY angle change moves
-  every pixel → "different person" even when it is the same woman. it compares
-  pixels, not identity. (test recall 0.42 - missed most angle-changed pairs)
-
-opponent 2: kNN on ResNet50 embeddings (the ruler with no student)
-  measure euclidean distance between two fingerprints, call it same-person if
-  closer than 0.6 - the face_recognition library's convention for NATURAL photos.
-  my experiment 4.2 found that rule badly miscalibrated for AI-generated faces
-  (they sit further apart in embedding space): recall 0.20 at 0.6, but F1=1.0 at 0.8.
-  lesson: published conventions dont transfer blindly to synthetic imagery.
-  note: the k parameter is vestigial - predict_pair never votes among k
-  neighbours, it just measures one distance. kNN also never learns: fit() only
-  STORES the data (lazy learner), and every dimension votes equally - noise as
-  loud as jawline. a ruler, not a student (see my Section 1.3 note).
-"""
-
 import numpy as np
 from PIL import Image
 from pathlib import Path
@@ -57,9 +32,9 @@ class KNNEmbeddingClassifier:
     "the ruler: euclidean distance between two ResNet fingerprints vs a fixed 0.6 cutoff. nothing here ever learns"
 
     def __init__(self, k: int = 5, distance_threshold: float = 0.6):
-        #k is kept for the classic kNN interface but predict_pair never uses it (vestigial - see experiment 4.2)
+        #k is kept for the classic kNN interface but predict_pair never uses it (vestigial, see experiment 4.2)
         self.k = k
-        #the face_recognition library's 0.6 convention - calibrated on natural photos, not synthetic ones
+        #the face_recognition library's 0.6 convention, calibrated on natural photos, not synthetic ones
         self.distance_threshold = distance_threshold
         self.train_embeddings = None
         self.train_labels     = None

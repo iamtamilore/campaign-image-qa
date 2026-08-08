@@ -1,0 +1,31 @@
+{
+  "device": "CPU",
+  "n_runs": 30,
+  "preprocess_per_image": {
+    "mean_ms": 7.29,
+    "std_ms": 0.52,
+    "p50_ms": 7.05,
+    "p95_ms": 8.46,
+    "min_ms": 6.95,
+    "max_ms": 9.2
+  },
+  "siamese_pair_inference": {
+    "mean_ms": 86.36,
+    "std_ms": 17.0,
+    "p50_ms": 82.46,
+    "p95_ms": 111.39,
+    "min_ms": 78.6,
+    "max_ms": 163.02
+  },
+  "autoencoder_inference": {
+    "mean_ms": 39.45,
+    "std_ms": 1.25,
+    "p50_ms": 39.43,
+    "p95_ms": 41.37,
+    "min_ms": 37.51,
+    "max_ms": 41.96
+  },
+  "end_to_end_gate_mean_ms": 133.1,
+  "throughput_images_per_min": 450.8,
+  "note": "Latency of the deployed QA gate on one new image: preprocess, Siamese identity check against the hero reference, autoencoder grade check. 3 warm-up calls discarded (graph tracing), 30 timed runs."
+}

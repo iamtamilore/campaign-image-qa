@@ -1,21 +1,3 @@
-"""
-preprocessing.py — the sample-prep bench: every photo gets served to ResNet50 the exact same way.
-
-ResNet50 was trained on ImageNet with every photo at (224, 224, 3), float32,
-colour-shifted by fixed ImageNet mean values. so every one of my images must be
-prepared identically or the fingerprints mean nothing — same tube size, same
-dilution, for every sample.
-
-this file also deals the 600 flashcards into three stacks:
-  train=420  val=90  test=90  (stratified — every stack keeps the 50/50 pos/neg balance)
-
-the two rules that matter:
-  1. augmentation (mirror flip + brightness nudge) happens ONLY on the train stack.
-     touching val or test would be marking my own exam = data leakage.
-  2. the split and the batch shuffle are both seeded (42) so every run deals
-     the exact same cards — reproducible numbers.
-"""
-
 import json
 import numpy as np
 from pathlib import Path
@@ -28,10 +10,10 @@ try:
     TF_AVAILABLE = True
 except ImportError:
     TF_AVAILABLE = False
-    print("[warn] TensorFlow not installed — install with: pip install tensorflow")
+    print("[warn] TensorFlow not installed, install with: pip install tensorflow")
 
 
-#the tube size — ResNet50 only accepts this
+#the tube size, ResNet50 only accepts this
 IMG_SIZE = (224, 224)
 
 
@@ -57,11 +39,11 @@ def load_and_preprocess(image_path: str, augment: bool = False) -> "np.ndarray":
 
 #the coin-flip mirror + small brightness nudge (train only)
 def _augment(arr: "np.ndarray") -> "np.ndarray":
-    "light augmentation for training only. NEVER on val/test — that would be data leakage"
+    "light augmentation for training only. NEVER on val/test, that would be data leakage"
     #coin flip: mirror the image left-right half the time
     if np.random.rand() > 0.5:
         arr = np.fliplr(arr)
-    #brightness nudge of max ±10% — small on purpose, must not change the grade signature
+    #brightness nudge of max ±10%, small on purpose, must not change the grade signature
     delta = np.random.uniform(-0.1, 0.1)
     #clip keeps the numbers inside the range ResNet expects (ImageNet space is centred)
     arr   = np.clip(arr + delta * 255, -128, 128)
@@ -92,7 +74,7 @@ class PairDataset:
         positives = [p for p in self.pairs if p["label"] == 1]
         negatives = [p for p in self.pairs if p["label"] == 0]
 
-        #deal each colour separately, then combine — every stack ends up 50/50
+        #deal each colour separately, then combine, every stack ends up 50/50
         self.train_pairs, self.val_pairs, self.test_pairs = \
             self._split(positives, negatives, val_split, test_split, seed)
 

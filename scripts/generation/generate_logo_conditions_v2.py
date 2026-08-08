@@ -1,22 +1,3 @@
-"""
-generate_logo_conditions_v2.py - D1/D2/E: isolated single-variable follow-ups
-to Condition B (which already beat prompt-only on spelling + color).
-
-D1 - Condition B + tight text-crop (ground_truth_wordmark_v2.png) as a 3rd
-     reference. Hypothesis: a magnified, unambiguous view of just the
-     lettering helps the model render it more precisely.
-D2 - D1 + a solid RGB(114,2,2) color swatch as a 4th reference. Isolated on
-     top of D1 so if it doesn't help, we know it's specifically the swatch,
-     not the text-crop, that's inert.
-E - Condition B's exact 2-ref setup, prompt rewritten with a natural-
-     language color descriptor ("deep oxblood red") instead of no color
-     language at all. NOT testing literal RGB-triplet-in-prompt (that's
-     very unlikely to work -- text encoders aren't trained on numeric
-     color codes as meaningful tokens).
-
-flux-2 only, n=1 each (~5cr x 3 = 15cr).
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime, timezone

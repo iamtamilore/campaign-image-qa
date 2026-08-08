@@ -1,0 +1,76 @@
+FLUX-2 vs GPT-IMAGE-2 COMPARISON REPORT
+
+SUBJECT A
+
+  Step 1 — Seed → Hero Front (identity capture from Pinterest ref)
+  EMB_SIM:  flux=0.9906   gpt2=0.9802   >> flux-2 captured seed better
+
+  Steps 2+3 — Angle shots (EMB_SIM vs seed | SSIM vs hero_front)
+
+  Angle: 3qleft  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.5651±0.0035   gpt2=0.6213±0.0114  >> gpt-2
+    flux samples:  [0.5665, 0.5688, 0.5603, 0.5618, 0.5683]
+    gpt2 samples:  [0.6313, 0.6284, 0.6094, 0.6317, 0.6056]
+  EMB_SIM:  flux=0.8674±0.0208  gpt2=0.9537±0.0126  >> gpt-2
+
+  Angle: 3qright  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.5415±0.0299   gpt2=0.6410±0.0129  >> gpt-2
+    flux samples:  [0.5628, 0.5146, 0.5173, 0.5229, 0.59]
+    gpt2 samples:  [0.6594, 0.6495, 0.6409, 0.6221, 0.6332]
+  EMB_SIM:  flux=0.8434±0.0128  gpt2=0.9580±0.0092  >> gpt-2
+
+  Angle: profileleft  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.5273±0.0088   gpt2=0.5497±0.0146  >> gpt-2
+    flux samples:  [0.5154, 0.5403, 0.5228, 0.534, 0.5239]
+    gpt2 samples:  [0.5267, 0.5566, 0.5388, 0.565, 0.5612]
+  EMB_SIM:  flux=0.8104±0.0093  gpt2=0.8370±0.0240  >> gpt-2
+
+  Angle: profileright  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.5515±0.0025   gpt2=0.5644±0.0125  >> gpt-2
+    flux samples:  [0.5545, 0.5514, 0.5528, 0.5517, 0.547]
+    gpt2 samples:  [0.5687, 0.5681, 0.5812, 0.5604, 0.5433]
+  EMB_SIM:  flux=0.7889±0.0039  gpt2=0.8473±0.0174  >> gpt-2
+
+  Angle: back  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.6544±0.0057   gpt2=0.6304±0.0165  >> flux-2
+    flux samples:  [0.6477, 0.6551, 0.6482, 0.6589, 0.6622]
+    gpt2 samples:  [0.6216, 0.6054, 0.6322, 0.655, 0.6378]
+  EMB_SIM:  flux=0.7980±0.0090  gpt2=0.8196±0.0164  >> gpt-2
+
+SUBJECT B
+----------------------------------------
+
+  Step 1 — Seed → Hero Front (identity capture from Pinterest ref)
+  EMB_SIM:  flux=0.8049   gpt2=0.7939   >> flux-2 captured seed better
+
+  Steps 2+3 — Angle shots (EMB_SIM vs seed | SSIM vs hero_front)
+
+  Angle: 3qleft  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.4819±0.0264   gpt2=0.4872±0.0046  >> gpt-2
+    flux samples:  [0.4841, 0.4572, 0.4555, 0.4843, 0.5285]
+    gpt2 samples:  [0.4855, 0.4936, 0.4854, 0.4806, 0.491]
+  EMB_SIM:  flux=0.8192±0.0180  gpt2=0.8164±0.0067  >> flux-2
+
+  Angle: 3qright  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.4708±0.0154   gpt2=0.4820±0.0154  >> gpt-2
+    flux samples:  [0.4823, 0.4415, 0.4733, 0.4722, 0.4848]
+    gpt2 samples:  [0.5005, 0.4629, 0.49, 0.4921, 0.4644]
+  EMB_SIM:  flux=0.8130±0.0052  gpt2=0.8183±0.0101  >> gpt-2
+
+  Angle: profileleft  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.4634±0.0069   gpt2=0.4621±0.0129  >> flux-2
+    flux samples:  [0.4607, 0.4595, 0.4628, 0.4767, 0.4573]
+    gpt2 samples:  [0.4635, 0.4405, 0.4615, 0.4637, 0.4812]
+  EMB_SIM:  flux=0.7832±0.0130  gpt2=0.8121±0.0134  >> gpt-2
+
+  Angle: profileright  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.4273±0.0089   gpt2=0.4566±0.0119  >> gpt-2
+    flux samples:  [0.4396, 0.4333, 0.4149, 0.4203, 0.4287]
+    gpt2 samples:  [0.4619, 0.4587, 0.4739, 0.4383, 0.45]
+  EMB_SIM:  flux=0.7887±0.0199  gpt2=0.8088±0.0126  >> gpt-2
+
+  Angle: back  (n=5 flux / 5 gpt2)
+  SSIM:     flux=0.5373±0.0256   gpt2=0.4807±0.0133  >> flux-2
+    flux samples:  [0.5736, 0.522, 0.5082, 0.5206, 0.5619]
+    gpt2 samples:  [0.4854, 0.5002, 0.4806, 0.4784, 0.4588]
+  EMB_SIM:  flux=0.6783±0.0279  gpt2=0.7133±0.0170  >> gpt-2

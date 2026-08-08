@@ -1,28 +1,3 @@
-"""
-generate_angle_comparison.py - flux-2 vs gpt-image-2 ablation experiment.
-
-Generates N_SAMPLES images per angle for both models for one or both subjects.
-Every API call is logged to PROMPT_LOG.json for IEEE report reproducibility section.
-
-Naming convention:
-  hero_3qleft_1.png, hero_3qleft_2.png ... hero_3qleft_5.png
-
-Output dirs:
-  data/subject_A/hero_ref/flux-2-test/   ← flux-2 samples
-  data/subject_A/hero_ref/gpt-2-test/    ← gpt-image-2-i2i samples
-  data/subject_B/hero_ref/flux-2-test/   ← (same)
-  data/subject_B/hero_ref/gpt-2-test/    ← (same)
-
-REQUIRES: hero_front.png for the subject (run generate_both_subjects.py first for Subject A).
-Re-run safe - skips existing files.
-
-Usage:
-  key auto-loads from the project-root .env file (KIE_API_KEY=...); no manual export needed
-  python generate_angle_comparison.py --subject A --n 5
-  python generate_angle_comparison.py --subject B --n 5
-  python generate_angle_comparison.py --subject both --n 5
-"""
-
 import sys, json, argparse
 from pathlib import Path
 from datetime import datetime
@@ -138,10 +113,10 @@ def run_subject(gen: HeroGenerator, subject_id: str, cfg: dict, n: int):
         return
 
     print(f"\n{'='*60}")
-    print(f"  Subject {subject_id} - uploading hero_front for angle generation")
+    print(f"  Subject {subject_id}, uploading hero_front for angle generation")
     print(f"{'='*60}")
 
-    # Load REF 3 identity spec (brain_modules Module 4 - pre-processing before generation)
+    # Load REF 3 identity spec (brain_modules Module 4, pre-processing before generation)
     identity_core = HeroGenerator.load_identity_spec(cfg["identity_spec"].parent)
     print(f"\n  [identity] loaded spec from {cfg['identity_spec'].name}")
     print(f"  [identity] core preview: {identity_core[:120]}...")
@@ -180,12 +155,12 @@ def run_subject(gen: HeroGenerator, subject_id: str, cfg: dict, n: int):
     # ── DOCX CHECKPOINT ──────────────────────────────────────────────────────────
     print(f"""
 ╔══════════════════════════════════════════════════════════════╗
-║  DOCX CHECKPOINT - Subject {subject_id} angles generated               ║
+║  DOCX CHECKPOINT, Subject {subject_id} angles generated               ║
 ╚══════════════════════════════════════════════════════════════╝
 
 Open your .docx and type the following (in your own words):
 
-  Section: "Model Comparison - Subject {subject_id}"
+  Section: "Model Comparison, Subject {subject_id}"
 
   1. Open the flux-2-test/ folder. Open the gpt-2-test/ folder.
      Look at the same angle across both (start with hero_3qleft_1.png).
@@ -193,7 +168,7 @@ Open your .docx and type the following (in your own words):
      preserve Subject {subject_id}'s face because [what you observe]."
 
   2. Note any artefacts you see (face blur, double face, extra limbs,
-     background bleeds, etc.) - write one sentence per issue.
+     background bleeds, etc.), write one sentence per issue.
 
   3. Note the credit cost: flux-2 = 5cr/image, gpt-2 = 6cr/image.
      Write: "At 5 images per angle × 5 angles = 25 images per model,

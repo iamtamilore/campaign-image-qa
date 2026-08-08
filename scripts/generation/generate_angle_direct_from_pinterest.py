@@ -1,25 +1,3 @@
-"""
-generate_angle_direct_from_pinterest.py - Gemini-claim validation experiment.
-
-Old workflow (brain_modules.txt, Rule 8): Pinterest seed -> hero_front.png (AI
-hop 1) -> angle shots (AI hop 2). Every angle is two generations removed from
-the real photo.
-
-This script tests the alternative Gemini described: skip hero_front entirely
-and generate each angle DIRECTLY from the Pinterest seed (one AI hop instead
-of two), to see whether that reduces identity drift.
-
-Uses flux-2 only (Rule 8 priority model, cheapest, ~5cr/image), n=1 per angle
-for a first-look validation pass (25cr total for Subject A).
-
-Scored later with the same compute_emb_sim(seed, generated) function already
-in scripts/metrics/compute_angle_metrics.py, so results are directly
-comparable to reports/comparison_metrics.json.
-
-Usage:
-  python scripts/generation/generate_angle_direct_from_pinterest.py
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime
@@ -68,7 +46,7 @@ def main():
             generated += 1
             continue
 
-        print(f"\n[flux-2] {angle} - direct from Pinterest seed")
+        print(f"\n[flux-2] {angle}, direct from Pinterest seed")
         try:
             task_id = gen.create_flux_angle_task(prompt, ref_url)
             result  = gen.poll(task_id)

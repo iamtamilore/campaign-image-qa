@@ -1,6 +1,6 @@
-.venv/
-__pycache__/
-*.py[cod]
-.env
-*.keras
-*.bak_*
+
+# large artefacts, regenerate with: python main.py --phase all
+data/subject_A/
+data/subject_B/
+outputs/models/
+*.odt

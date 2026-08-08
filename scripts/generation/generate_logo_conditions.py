@@ -1,26 +1,3 @@
-"""
-generate_logo_conditions.py - MULLAY jacket logo-fidelity experiment.
-
-Ground truth: outputs/mullay_experiment/ground_truth_wordmark.png ("MULLAY",
-vertical, red, extracted via color-threshold from the real tech pack photo).
-
-Condition A - prompt-only: subject's plain hero_front (no jacket) as the only
-  reference; the jacket AND its logo are described in text only. Tests
-  whether flux-2 can spell "MULLAY" correctly with zero visual reference.
-
-Condition B - image-to-image with jacket ref: hero_front + the real jacket
-  photo as two references. Tests whether giving the model the actual garment
-  image (no local masking, just "look at this") improves text fidelity.
-
-Condition C (built separately, locally, no API call): homography-stamp the
-  REAL ground-truth wordmark pixels onto Condition B's render.
-
-flux-2 only, n=1 each (~5cr x 2 = 10cr).
-
-Usage:
-  python scripts/generation/generate_logo_conditions.py
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime, timezone

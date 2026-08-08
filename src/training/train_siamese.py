@@ -1,26 +1,3 @@
-"""
-train_siamese.py - the school term: where the siamese network actually learns.
-
-build = assemble the machine, compile = set the knobs, FIT = train. this file is the fit.
-
-one epoch = one school day = the network sees all 420 training flashcards once.
-after each day: a mini-quiz on the 90 validation cards (never learned from).
-the 90 test cards stay SEALED until evaluate.py - that is the real exam.
-
-KDD/CRISP-DM phase: Modelling (step 4 of 6).
-dataset → preprocessing → pair construction MUST be done first.
-
-run:
-  python -m src.training.train_siamese
-
-outputs:
-  outputs/models/siamese_best.keras - the trained brain (best day, not last day)
-  outputs/results/siamese_train_log.csv - the diary, one row per epoch
-  outputs/results/siamese_train_summary.json - best score + epochs + time
-
-my real result: early stop at epoch 11/50, val_roc_auc = 1.0000, 371s on CPU.
-"""
-
 import json, time
 from pathlib import Path
 
@@ -34,15 +11,15 @@ except ImportError:
     print("[warn] Install deps: pip install tensorflow")
 
 
-# ── THE RECIPE CARD - every knob in one place, change one number without hunting ──
+# ── THE RECIPE CARD, every knob in one place, change one number without hunting ──
 CONFIG = {
-    #fingerprint size (FaceNet convention - experiment 4.4 retrained at 64 and 256 using this same dict)
+    #fingerprint size (FaceNet convention, experiment 4.4 retrained at 64 and 256 using this same dict)
     "embedding_dim":    128,
     #careful steps for a frozen backbone (see my rule: frozen → 1e-4, from-scratch → 1e-3)
     "learning_rate":    1e-4,
     #how many flashcards per weight adjustment
     "batch_size":       16,
-    #max school days - early stopping usually ends it much sooner
+    #max school days, early stopping usually ends it much sooner
     "epochs":           50,
     #coach: give up after 10 days without improvement
     "early_stop_patience": 10,
@@ -58,12 +35,12 @@ CONFIG = {
 
 def train(config: dict = CONFIG) -> dict:
     "full training run. returns dict with best val_roc_auc + epochs trained + time"
-    # ── DATA - deal the flashcards into stacks, serve train + val ────────────
+    # ── DATA, deal the flashcards into stacks, serve train + val ────────────
     dataset   = PairDataset(manifest_path=config["manifest_path"])
     train_ds  = dataset.as_tf_dataset("train", batch_size=config["batch_size"])
     val_ds    = dataset.as_tf_dataset("val",   batch_size=config["batch_size"])
 
-    # ── MODEL - assemble the machine, then set the knobs ─────────────────────
+    # ── MODEL, assemble the machine, then set the knobs ─────────────────────
     model = build_siamese_model(embedding_dim=config["embedding_dim"])
     model = compile_siamese(model, learning_rate=config["learning_rate"])
     model.summary()
@@ -92,7 +69,7 @@ def train(config: dict = CONFIG) -> dict:
     start = time.time()
     history = model.fit(
         train_ds,
-        #the mini-quiz after every school day - never learned from
+        #the mini-quiz after every school day, never learned from
         validation_data=val_ds,
         epochs=config["epochs"],
         callbacks=callbacks,
@@ -108,7 +85,7 @@ def train(config: dict = CONFIG) -> dict:
         "config":              config,
     }
 
-    #save the summary - this json is where the report's training numbers come from
+    #save the summary, this json is where the report's training numbers come from
     out_path = Path("outputs/results/siamese_train_summary.json")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w") as f:

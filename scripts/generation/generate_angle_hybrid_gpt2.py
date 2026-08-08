@@ -1,17 +1,3 @@
-"""
-generate_angle_hybrid_gpt2.py - same hybrid idea (seed + hero_front as dual
-refs) but on gpt-image-2-i2i instead of flux-2, since gpt-2 was the clear
-winner in every prior angle test (see reports/comparison_metrics.json and
-outputs/results/hybrid_vs_direct_vs_baseline.json).
-
-Question: does dual-referencing push the already-best model even higher?
-
-gpt-2 only, n=1 per angle (~6cr x 5 = 30cr).
-
-Usage:
-  python scripts/generation/generate_angle_hybrid_gpt2.py
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime, timezone

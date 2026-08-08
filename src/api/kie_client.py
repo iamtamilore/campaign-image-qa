@@ -1,23 +1,3 @@
-"""
-kie_client.py - my low-level kie.ai wrapper (upload a file + start a task).
-
-note: all the actual CA2 image generation ran through src/api/hero_generator.py,
-which talks to the same api but with my prompt-engineering rules baked in.
-this file is just the minimal base client, kept for reference.
-
-setup: the key auto-loads from the project-root .env file (KIE_API_KEY=...),
-no manual export needed.
-
-model used:
-  flux-2/pro-image-to-image   5cr   hero generation + angle variants (up to 8 refs)
-
-how you would use it:
-  from src.api.kie_client import KieClient
-  client  = KieClient()
-  url     = client.upload("path/to/ref.png")               #host the reference image
-  task_id = client.create_hero_task("prompt...", [url])    #start a generation job
-"""
-
 import os, sys, time, json, requests
 from pathlib import Path
 #The main address where Kie.ai lives

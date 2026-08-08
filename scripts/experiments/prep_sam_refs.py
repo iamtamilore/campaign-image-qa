@@ -1,19 +1,3 @@
-"""
-prep_sam_refs.py - local preprocessing for the two SAM->Kie.ai experiments.
-
-Output 1 (test #3, clean isolation): Grounded-SAM with caption "jacket" ->
-  best box -> SAM2 mask -> jacket composited onto pure white, saved as
-  ref_isolated_white.png. Idea: give flux-2 LESS to misread (no second
-  garment view, no background), see if dressing fidelity improves over the
-  raw tech-pack ref (Condition B baseline).
-
-Output 2 (test #2, annotation overlay): raw tech-pack image with a green
-  box drawn around the wordmark (GroundingDINO's own auto box from the
-  M16.18 run), saved as ref_annotated_greenbox.png. Idea: does the model
-  treat drawn markup as an instruction, or does it print the markup onto
-  the output? (Bet: markup bleed.)
-"""
-
 import sys
 import numpy as np
 from pathlib import Path

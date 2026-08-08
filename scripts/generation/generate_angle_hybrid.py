@@ -1,23 +1,3 @@
-"""
-generate_angle_hybrid.py - combine the two-stage workflow (brain_modules.txt
-Rule 8) with the Gemini direct-from-source idea, instead of treating them as
-mutually exclusive.
-
-Old two-stage: angle ref = hero_front.png only
-Gemini direct: angle ref = Pinterest seed only (LOST on every angle, see
-  reports/comparison_metrics.json vs data/subject_A/hero_ref/flux-2-direct/)
-Hybrid (this):  angle ref = [Pinterest seed, hero_front.png] together
-  -- flux-2/pro-image-to-image accepts multiple input_urls (max 8) --
-  hypothesis: give the model the real identity detail (seed) AND the clean
-  studio base (hero_front) at once, instead of forcing a choice between them.
-
-flux-2 only, n=1 per angle (~5cr x 5 = 25cr), same conditions as the direct
-test for a clean 3-way comparison.
-
-Usage:
-  python scripts/generation/generate_angle_hybrid.py
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime, timezone

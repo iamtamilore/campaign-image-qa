@@ -1,25 +1,3 @@
-"""
-evaluate.py - exam day: one marker, three students (Evaluation rubric = 20% of marks).
-
-the 90 test flashcards have been sealed since preprocessing.py dealt them - 
-nobody trained on them, nobody tuned on them. now three students sit the exam:
-  student A: siamese network (my proposed method)
-  student B: pixel-difference detector (the tracing-paper kid)
-  student C: kNN on embeddings (the ruler)
-
-the fairness rule: the SAME marker grades all three with the SAME rubric.
-if each model measured itself differently, the comparison table would be meaningless.
-
-covers all metrics the rubric asks for:
- - precision, recall, F1
- - ROC-AUC (siamese only - baselines output hard yes/no, no confidence to rank,
-    which is why the report table shows N/A for them: structurally impossible, not missing)
- - confusion matrix (TP/TN/FP/FN - my 37/45/0/8 comes from here)
-
-every number the report quotes lands in outputs/results/all_metrics.json - 
-the single source of truth. open that file, not my memory.
-"""
-
 import json, numpy as np
 from pathlib import Path
 
@@ -28,8 +6,7 @@ try:
                                   roc_auc_score, confusion_matrix,
                                   classification_report, roc_curve)
     import matplotlib
-    #sneaky but vital: draw to files without needing a screen - 
-    #without this the pipeline crashes on a server or plain terminal
+    #sneaky but vital: draw to files without needing a screen, #without this the pipeline crashes on a server or plain terminal
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     SKLEARN_AVAILABLE = True
@@ -41,7 +18,7 @@ except ImportError:
 OUT_DIR = Path("outputs")
 
 
-#the marking machine - grades ONE student's answer sheet
+#the marking machine, grades ONE student's answer sheet
 def compute_classification_metrics(y_true: np.ndarray, y_pred: np.ndarray,
                                    y_prob: np.ndarray | None = None,
                                    name: str = "model") -> dict:
@@ -49,12 +26,12 @@ def compute_classification_metrics(y_true: np.ndarray, y_pred: np.ndarray,
     metrics = {
         "name":      name,
         #zero_division=0: if a student never says 'same', precision would be 0/0 and crash.
-        #this guard scores it 0 instead - a wall against a lazy student breaking the marker
+        #this guard scores it 0 instead, a wall against a lazy student breaking the marker
         "precision": round(precision_score(y_true, y_pred, zero_division=0), 4),
         "recall":    round(recall_score(y_true, y_pred, zero_division=0), 4),
         "f1":        round(f1_score(y_true, y_pred, zero_division=0), 4),
     }
-    #ROC-AUC only when the student gave confidence scores (siamese) - baselines cant be ranked
+    #ROC-AUC only when the student gave confidence scores (siamese), baselines cant be ranked
     if y_prob is not None:
         metrics["roc_auc"] = round(roc_auc_score(y_true, y_prob), 4)
 
@@ -93,7 +70,7 @@ def plot_roc_curves(roc_results: list[dict], save_path: str = "outputs/plots/roc
     plt.plot([0, 1], [0, 1], "k--", label="Random")
     plt.xlabel("False Positive Rate")
     plt.ylabel("True Positive Rate")
-    plt.title("ROC Curves - Siamese vs Baselines")
+    plt.title("ROC Curves: Siamese vs Baselines")
     plt.legend()
     plt.tight_layout()
     Path(save_path).parent.mkdir(parents=True, exist_ok=True)
@@ -112,14 +89,16 @@ def plot_confusion_matrix(metrics: dict, save_path: str | None = None):
     ax.set_xticks([0, 1]); ax.set_yticks([0, 1])
     ax.set_xticklabels(["Different", "Same"]); ax.set_yticklabels(["Different", "Same"])
     ax.set_xlabel("Predicted"); ax.set_ylabel("True")
-    ax.set_title(f"Confusion Matrix - {name}")
+    #no in-image title: the report's figure caption carries it, and having both duplicates it
     #write the count inside each of the four boxes
     for i in range(2):
         for j in range(2):
             ax.text(j, i, str(cm[i, j]), ha="center", va="center", fontsize=14)
     plt.tight_layout()
     if save_path is None:
-        save_path = f"outputs/plots/cm_{name.replace(' ', '_')}.png"
+        #keep filenames LaTeX-safe: no spaces or brackets, or \includegraphics breaks
+        slug = "".join(ch if ch.isalnum() else "_" for ch in name.split("(")[0]).strip("_").lower()
+        save_path = f"outputs/plots/cm_{slug}.png"
     Path(save_path).parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(save_path, dpi=150)
     plt.close()
@@ -138,7 +117,7 @@ def save_results(all_metrics: list[dict], path: str = "outputs/results/all_metri
 def run_full_evaluation(siamese_preds: dict, pixel_preds: dict,
                          knn_preds: dict) -> list[dict]:
     """
-    master evaluation - call with predictions from all three models.
+    master evaluation, call with predictions from all three models.
 
     each input dict must have:
       labels:      ground truth (0/1)

@@ -17,28 +17,28 @@
   "exp2_knn_distance_threshold": {
     "dist_thr_0.4": {
       "precision": 1.0,
-      "recall": 0.2222,
-      "f1": 0.3636
+      "recall": 0.1778,
+      "f1": 0.3019
     },
     "dist_thr_0.5": {
       "precision": 1.0,
-      "recall": 0.3111,
-      "f1": 0.4746
+      "recall": 0.2889,
+      "f1": 0.4483
     },
     "dist_thr_0.6": {
       "precision": 1.0,
-      "recall": 0.5778,
-      "f1": 0.7324
+      "recall": 0.4667,
+      "f1": 0.6364
     },
     "dist_thr_0.7": {
       "precision": 1.0,
-      "recall": 0.9556,
-      "f1": 0.9773
+      "recall": 0.7778,
+      "f1": 0.875
     },
     "dist_thr_0.8": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0
+      "recall": 0.9333,
+      "f1": 0.9655
     }
   },
   "exp2_note": "Baseline's k parameter is vestigial: predict_pair uses only the Euclidean distance rule (face_recognition 0.6 convention). Distance threshold is the operative hyperparameter.",
@@ -80,16 +80,16 @@
     "dim_64": {
       "test": {
         "precision": 1.0,
-        "recall": 0.8444,
-        "f1": 0.9157
+        "recall": 0.9778,
+        "f1": 0.9888
       },
       "test_roc_auc": 1.0
     },
     "dim_256": {
       "test": {
         "precision": 1.0,
-        "recall": 0.9333,
-        "f1": 0.9655
+        "recall": 0.8444,
+        "f1": 0.9157
       },
       "test_roc_auc": 1.0
     }

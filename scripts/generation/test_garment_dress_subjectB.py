@@ -1,10 +1,3 @@
-"""
-test_garment_dress_subjectB.py - sanity check for the new
-HeroGenerator.create_garment_dress_task (Rule 9 / M16.10 recipe), and a
-second real data point on flux-2's garment/print rendering, on Subject B
-instead of Subject A (n=1 -> n=2 across two different people).
-"""
-
 import sys
 from pathlib import Path
 

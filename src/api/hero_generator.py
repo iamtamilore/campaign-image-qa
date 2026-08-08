@@ -1,30 +1,3 @@
-"""
-hero_generator.py - character sheet generation with all brain_modules rules baked in.
-This is the wrapper the project ACTUALLY used for all image generation.
-
-BRAIN_MODULES RULES ENCODED HERE:
-  Rule 1 - quality HIGH always (low = plastic skin)
-  Rule 2 - Face instruction FIRST in every prompt
-            "FACE INSTRUCTION ALWAYS FIRST - model weights earlier terms more."
-  Rule 3 - Profile angles: camera-POSITION language, not head-direction language
-            head-direction → double-shot / landscape fail
-            FIX: "camera is positioned directly to the LEFT, aimed at her LEFT ear"
-  Rule 4 - Realism trick: prompt for IMPERFECTIONS explicitly
-            "visible pores, natural skin texture, no retouching, no plastic skin"
-  Rule 5 - Gray background ONLY (never white - bleeds into output)
-  Rule 6 - ONE image only + no double-shot language on profile angles
-  Rule 7 - Negative prompts must include: "side by side, double shot, comparison, turnaround"
-  Rule 8 - Priority: flux-2 FIRST for face lock from ref (5cr, confirmed face lock)
-           gpt-image-2-i2i BACKUP (6cr, minimal prompts only - aggressive negatives → drift)
-  Rule 9 - Garment/logo fidelity (measured, BRAIN_MODULES.txt M16.10/M16.13):
-           pass the REAL garment photo as a second reference image, plain
-           prompt, nothing else. Do NOT add a cropped text-detail reference,
-           a color swatch, or explicit color-naming language on top of it - 
-           all three were tested and each one made spelling/color fidelity
-           WORSE than the plain two-reference baseline (23.5 -> 31.4/31.8/53.0
-           color distance from ground truth). The minimal version wins.
-"""
-
 import os, sys, time, json, requests
 from pathlib import Path
 
@@ -75,7 +48,7 @@ class HeroGenerator:
                 time.sleep(3)
 
         #catbox failed all 3 tries, fall back to litterbox (same site, files expire in 72h)
-        print("[upload] catbox failed - trying litterbox (72h expiry)")
+        print("[upload] catbox failed, trying litterbox (72h expiry)")
         try:
             with open(local_path, "rb") as f:
                 r = requests.post(
@@ -106,12 +79,12 @@ class HeroGenerator:
         data = resp.get("data")
         #sometimes kie.ai answers ok but sends empty data, catch that
         if not data:
-            raise RuntimeError(f"API null data - full response: {resp}")
+            raise RuntimeError(f"API null data, full response: {resp}")
         return data["taskId"]
 
     #order an image from gpt-image-2, keeping the face from my reference photos
     def create_gpt_i2i_task(self, prompt: str, ref_urls: list[str]) -> str:
-        "gpt-image-2-image-to-image, face-lock + dressing, costs ~6 credits. keep prompts MINIMAL - aggressive negatives cause drift"
+        "gpt-image-2-image-to-image, face-lock + dressing, costs ~6 credits. keep prompts MINIMAL, aggressive negatives cause drift"
         payload = {
             "model": "gpt-image-2-image-to-image",
             "input": {
@@ -156,7 +129,7 @@ class HeroGenerator:
         print(f"[flux-2] task → {task_id}  (~5cr)")
         return task_id
 
-    #DRESS SUBJECT IN A REAL GARMENT - Condition B's validated recipe (Rule 9)
+    #DRESS SUBJECT IN A REAL GARMENT, Condition B's validated recipe (Rule 9)
     #subject wearing an exact real garment (with legible branding/logo), locked
     #to the exact reference-image setup that measured best: subject ref + garment
     #ref, plain prompt, wide framing so the garment isn't cropped. Nothing more.
@@ -249,7 +222,7 @@ class HeroGenerator:
         #no spec file? use the minimal face-lock line
         if not spec_path.exists():
             return (
-                "Keep the face from the reference image exactly - "
+                "Keep the face from the reference image exactly, "
                 "identical face, hair, skin tone and features."
             )
         text = spec_path.read_text()
@@ -285,7 +258,7 @@ class HeroGenerator:
     def get_angle_jobs(self, identity_core: str) -> list[tuple[str, str]]:
         "return (filename, prompt) for all 5 angles. order: 3/4 left → 3/4 right → profile left → profile right → back. wider shot = less face pressure = less drift"
         return [
-            #3/4 angles FIRST - least face pressure, establish identity before demanding profiles
+            #3/4 angles FIRST, least face pressure, establish identity before demanding profiles
             ("hero_3qleft.png",
              self._angle_prompt(identity_core,
                 "Three-quarter view. Head turned approximately 45 degrees to the LEFT. "
@@ -296,7 +269,7 @@ class HeroGenerator:
                 "Three-quarter view. Head turned approximately 45 degrees to the RIGHT. "
                 "Both eyes visible. Right side of face dominant in frame. Jaw relaxed, unbothered.")),
 
-            #profile shots - camera-POSITION language, head-direction language causes double-shot fails
+            #profile shots, camera-POSITION language, head-direction language causes double-shot fails
             ("hero_profileleft.png",
              self._angle_prompt(identity_core,
                 "The camera is positioned directly to the LEFT of the subject, "
@@ -313,7 +286,7 @@ class HeroGenerator:
                 "Right side of the face fully visible, left side completely hidden behind the head. "
                 "Pure right profile. ONE person, ONE angle.")),
 
-            #back - zero face visible, no consistency pressure at all
+            #back, zero face visible, no consistency pressure at all
             ("hero_back.png",
              self._angle_prompt(identity_core,
                 "Back view. Camera is directly behind the subject. "
@@ -321,7 +294,7 @@ class HeroGenerator:
                 "Back of neck, hair, and upper shoulders in frame. Zero face visible.")),
         ]
 
-    #FULL CHARACTER SHEET FROM SEED - the method the project actually ran
+    #FULL CHARACTER SHEET FROM SEED, the method the project actually ran
 
     def generate_character_sheet_from_seed(self, subject_id: str,
                                             seed_path: str,
@@ -342,7 +315,7 @@ class HeroGenerator:
 
         #the face-lock prompt: keep the reference face exactly, clean grey studio
         front_prompt = (
-            "Keep the face from the reference image exactly - identical face, "
+            "Keep the face from the reference image exactly, identical face, "
             "skin tone, bone structure and features. "
             "Front-facing portrait, head straight to camera, neutral expression. "
             "Neutral grey studio background, even soft diffused lighting. "
@@ -377,7 +350,7 @@ class HeroGenerator:
                 #non-fatal: the flux front is the main one, gpt-2 is just for comparing
                 print(f"[hero] gpt-2 front failed (non-fatal): {e}")
 
-        #summary - just the two fronts (angles done separately via generate_angle_comparison.py)
+        #summary, just the two fronts (angles done separately via generate_angle_comparison.py)
         flux_ok = front_path.exists()
         gpt2_ok = gpt2_front_path.exists()
         print(f"\n=== {subject_id} fronts ===")

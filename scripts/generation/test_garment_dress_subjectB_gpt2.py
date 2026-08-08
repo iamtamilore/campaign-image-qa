@@ -1,9 +1,3 @@
-"""
-test_garment_dress_subjectB_gpt2.py - completes the 2x2 matrix (Subject A/B
-x flux-2/gpt-2) for the garment-dressing comparison. Subject A gpt-2 already
-exists (condition_B_gpt2.png); this fills in Subject B gpt-2.
-"""
-
 import sys
 from pathlib import Path
 

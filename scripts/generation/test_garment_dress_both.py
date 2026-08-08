@@ -1,11 +1,3 @@
-"""
-test_garment_dress_both.py - fresh n=1 samples for BOTH subjects via the
-finalized create_garment_dress_task (Rule 9 / M16.16), to check
-consistency/improvement now that the recipe is locked in as the actual
-production method (not the ad-hoc script version used for the first
-Subject A test).
-"""
-
 import sys
 from pathlib import Path
 

@@ -1,20 +1,3 @@
-"""
-generate_logo_conditions_gpt2.py - same A/B logo-fidelity test as
-generate_logo_conditions.py, but on gpt-image-2-i2i instead of flux-2, to
-decide which model create_garment_dress_task should standardize on.
-
-Per Rule 8 (brain_modules.txt / hero_generator.py header): gpt-2 needs
-MINIMAL prompts, no negative_prompt param exists for it -- so these prompts
-are intentionally shorter than the flux-2 versions, respecting gpt-2's own
-documented best practice rather than forcing an identical verbose prompt
-onto a model known to drift under it.
-
-Condition A (gpt2) - prompt-only, hero_front as sole reference.
-Condition B (gpt2) - hero_front + real jacket photo as two references.
-
-gpt-2 only, n=1 each (~6cr x 2 = 12cr).
-"""
-
 import sys, json
 from pathlib import Path
 from datetime import datetime, timezone

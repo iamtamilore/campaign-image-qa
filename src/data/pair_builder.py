@@ -1,27 +1,3 @@
-"""
-pair_builder.py — builds the 600 siamese pairs (flashcards) from my dataset.
-
-what it eats (per subject):
-  data/subject_A/hero_ref/   → 3 reference images: pinterest seed + flux-2 front + gpt-2 front
-  data/subject_A/styled/     → 50 shots: 5 angles x 10 each (5 flux-2 tries + 5 gpt-2 tries)
-  data/subject_B/            → same layout, different person
-  total: 53 per subject, 106 images
-
-pair logic (from my CA1 proposal §V):
-  POSITIVE pair (label 1) → same subject: her ref photo + her styled shot
-    3 refs x 50 styled = 150 per subject → 300 total
-  NEGATIVE pair (label 0) → different subjects: A's ref + B's styled (and B's ref + A's styled)
-    150 + 150 → 300 total
-  the code asks for 800 (400+400) but only 300 of each exist, so it takes everything → 600 pairs
-
-why negatives are style-matched: if subject A only wore teal grades and subject B only dark
-grades, the network could cheat — "teal = A" — without ever reading a face. both subjects
-appear in the same grades AND both generators' styles, so the only signal left is identity.
-
-output:
-  data/pairs/pairs_manifest.json — the list of 600 flashcards (img_a, img_b, label)
-"""
-
 import json, random
 from pathlib import Path
 from itertools import product
@@ -111,7 +87,7 @@ def build_pairs(data_dir: str = "data", target_pairs: int = 800,
     #aim for half positive, half negative
     half = target_pairs // 2
 
-    #sample down to a balanced set — min() means: take 400 if they exist, else take all
+    #sample down to a balanced set, min() means: take 400 if they exist, else take all
     #(we have 300 of each, so it takes all 300 + 300 = 600)
     pos_sample = rng.sample(positives, min(half, len(positives)))
     neg_sample = rng.sample(negatives, min(half, len(negatives)))
@@ -135,4 +111,4 @@ def build_pairs(data_dir: str = "data", target_pairs: int = 800,
 #run this file directly to rebuild the manifest
 if __name__ == "__main__":
     pairs = build_pairs()
-    print(f"[pairs] manifest done — {len(pairs)} pairs")
+    print(f"[pairs] manifest done, {len(pairs)} pairs")

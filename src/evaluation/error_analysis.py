@@ -1,25 +1,3 @@
-"""
-error_analysis.py - the post-mortem: WHEN does the model fail? (required by the CA2 rubric)
-
-a score tells you HOW MUCH you fail; this file tells you WHEN and WHY.
-like a hospital M&M meeting: dont just hear "8 cases wrong" - spread the actual
-8 case files on the table and look for the pattern.
-
-what it does:
-  1. pulls out the false positives (said same, was different - i have ZERO)
-  2. pulls out the false negatives (said different, was same - my 8 misses)
-  3. groups errors by grade signature
-  4. draws the failed pairs side by side (the money figure: fn_siamese.png)
-  5. saves the receipt: error_analysis_siamese.json
-
-my finding: all 8 false negatives are Subject B at low face-visibility angles
-(back and profile shots). the model was not wrong about her face - it just
-could not see enough of it.
-
-note: the original docstring here had FP and FN definitions swapped; the code
-was always correct (predicted 1, truth 0 → FP). words fixed, code untouched.
-"""
-
 import json, numpy as np
 from pathlib import Path
 
@@ -48,7 +26,7 @@ def find_errors(y_true: np.ndarray, y_pred: np.ndarray,
         if pred == 1 and gt == 0:
             false_positives.append({
                 "pair_index": i,
-                #keep the actual image paths - the case file, not just the index
+                #keep the actual image paths, the case file, not just the index
                 "img_a":      pairs[i].get("img_a", ""),
                 "img_b":      pairs[i].get("img_b", ""),
                 "grade":      pairs[i].get("grade", "unknown"),
@@ -69,7 +47,7 @@ def find_errors(y_true: np.ndarray, y_pred: np.ndarray,
 
 #count errors per colour grade: does it fail more on one particular grade?
 def grade_error_breakdown(errors: dict) -> dict:
-    "tally each pile by grade. note: my manifest has no grade key, so this shows 'unknown' - the real angle pattern comes from reading the image paths in the json"
+    "tally each pile by grade. note: my manifest has no grade key, so this shows 'unknown', the real angle pattern comes from reading the image paths in the json"
     breakdown = {}
     for err_type, err_list in errors.items():
         grade_counts = {}
@@ -80,7 +58,7 @@ def grade_error_breakdown(errors: dict) -> dict:
     return breakdown
 
 
-#lay the failed pairs side by side - the figure where a human can SEE the miss
+#lay the failed pairs side by side, the figure where a human can SEE the miss
 def plot_error_pairs(error_list: list[dict], title: str,
                      n_samples: int = 4,
                      save_path: str = "outputs/plots/error_samples.png"):
@@ -91,7 +69,7 @@ def plot_error_pairs(error_list: list[dict], title: str,
 
     samples = error_list[:n_samples]
     fig, axes = plt.subplots(n_samples, 2, figsize=(6, 3 * n_samples))
-    #with one row, matplotlib gives a flat pair instead of a grid - wrap it
+    #with one row, matplotlib gives a flat pair instead of a grid, wrap it
     if n_samples == 1:
         axes = [axes]
 
@@ -121,7 +99,7 @@ def plot_error_pairs(error_list: list[dict], title: str,
 def run_error_analysis(y_true: np.ndarray, y_pred: np.ndarray,
                         pairs: list[dict],
                         model_name: str = "siamese") -> dict:
-    "full error analysis - call after evaluation. returns the dict the report's Error Analysis subsection quotes"
+    "full error analysis, call after evaluation. returns the dict the report's Error Analysis subsection quotes"
     errors = find_errors(y_true, y_pred, pairs)
     breakdown = grade_error_breakdown(errors)
 
@@ -134,12 +112,12 @@ def run_error_analysis(y_true: np.ndarray, y_pred: np.ndarray,
     print(f"  Grade breakdown: {breakdown}")
 
     #the money figures: fp_siamese.png (empty for me) and fn_siamese.png (the 8 misses)
-    plot_error_pairs(errors["false_positives"], f"{model_name} - False Positives",
+    plot_error_pairs(errors["false_positives"], f"{model_name}: False Positives",
                      save_path=f"outputs/plots/fp_{model_name}.png")
-    plot_error_pairs(errors["false_negatives"], f"{model_name} - False Negatives",
+    plot_error_pairs(errors["false_negatives"], f"{model_name}: False Negatives",
                      save_path=f"outputs/plots/fn_{model_name}.png")
 
-    #the receipt - keep only the first 4 examples of each pile to stay readable
+    #the receipt, keep only the first 4 examples of each pile to stay readable
     report = {
         "model":            model_name,
         "n_false_positive": n_fp,

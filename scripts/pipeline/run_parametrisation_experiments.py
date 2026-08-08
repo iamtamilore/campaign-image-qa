@@ -1,18 +1,3 @@
-"""
-run_parametrisation_experiments.py - Rubric Row 5 "diverse parametrisation".
-
-Four experiments, all free/local, no Kie.ai credits:
-  EXP 1 - Siamese decision threshold: tune on VAL (never test), apply to test.
-          ROC-AUC=1.0 predicts a threshold with perfect test F1 exists.
-  EXP 2 - kNN distance threshold sweep (0.4/0.5/0.6/0.7/0.8).
-          NOTE: baseline's `k` is vestigial - predict_pair uses distance rule only.
-  EXP 3 - AE anomaly threshold percentile (90/95/99) on compliant vs
-          synthetically-distorted (hue shift / overexposure / desaturation) images.
-  EXP 4 - Siamese embedding_dim 64 vs 128 vs 256 (retrains 64 + 256).
-
-Outputs: outputs/results/parametrisation_experiments.json
-"""
-
 import json, time
 import numpy as np
 from pathlib import Path
@@ -64,7 +49,7 @@ def score_pairs(model, pairs, batch=16):
     return np.array(labels), np.array(probs)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 1 - SIAMESE DECISION THRESHOLD (tuned on val, applied to test)
+# EXP 1, SIAMESE DECISION THRESHOLD (tuned on val, applied to test)
 # ══════════════════════════════════════════════════════════════════════════════
 log("EXP 1: scoring val + test with siamese_best...")
 siamese = tf.keras.models.load_model("outputs/models/siamese_best.keras",
@@ -92,7 +77,7 @@ log(f"EXP 1 done: default F1={exp1['default_0.5_test']['f1']}  "
     f"tuned thr={best_thr} → test F1={exp1['tuned_test']['f1']}")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 2 - kNN DISTANCE THRESHOLD SWEEP
+# EXP 2, kNN DISTANCE THRESHOLD SWEEP
 # ══════════════════════════════════════════════════════════════════════════════
 log("EXP 2: computing raw ResNet50 embeddings for test pairs...")
 emb_model = get_embedding_model()
@@ -117,7 +102,7 @@ RESULTS["exp2_note"] = ("Baseline's k parameter is vestigial: predict_pair uses 
 log(f"EXP 2 done: {json.dumps({k: v['f1'] for k, v in exp2.items()})}")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 3 - AE PERCENTILE + COMPLIANT vs SYNTHETIC NON-COMPLIANT
+# EXP 3, AE PERCENTILE + COMPLIANT vs SYNTHETIC NON-COMPLIANT
 # ══════════════════════════════════════════════════════════════════════════════
 log("EXP 3: AE threshold percentiles vs synthetic grade drift...")
 ae = tf.keras.models.load_model("outputs/models/autoencoder_best.keras",
@@ -177,7 +162,7 @@ log(f"EXP 3 done: compliant MSE={exp3['compliant_mean_mse']}  "
     f"non-compliant MSE={exp3['non_compliant_mean_mse']}")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 4 - EMBEDDING DIM 64 vs 128 vs 256 (retrains 64 + 256)
+# EXP 4, EMBEDDING DIM 64 vs 128 vs 256 (retrains 64 + 256)
 # ══════════════════════════════════════════════════════════════════════════════
 from src.training.train_siamese import train as train_siamese, CONFIG
 

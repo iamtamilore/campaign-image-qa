@@ -1,15 +1,3 @@
-"""
-test_sam_prepped_refs.py - two flux-2 dressing tests on Subject A with
-SAM-preprocessed garment references, compared against the plain tech-pack
-ref baseline (condition_B_subjectA_flux2_v2.png).
-
-Condition F (test #3, clean isolation): garment ref = jacket cut onto pure
-  white by Grounded-SAM. Same validated dress recipe otherwise (Rule 9).
-Condition G (test #2, annotation overlay): garment ref = raw tech-pack image
-  with a green box drawn around the wordmark; prompt tells the model the box
-  is an annotation to obey, not to draw. Checking for markup bleed.
-"""
-
 import sys
 from pathlib import Path
 

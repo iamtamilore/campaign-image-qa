@@ -1,22 +1,3 @@
-"""
-compute_angle_metrics.py - flux-2 vs gpt-image-2 face-consistency comparison.
-
-For each subject × each angle × each model:
- - Load N samples from flux-2-test/ and gpt-2-test/
- - Compare each sample to the hero_front.png (the canonical locked face)
- - Metrics computed:
-      SSIM - structural similarity to hero_front (0-1, higher = more similar)
-      EMB_SIM - cosine similarity of ResNet50 face embedding to hero_front (0-1)
- - Saves per-sample + averaged results to:
-      reports/comparison_metrics.json   (machine-readable)
-      reports/comparison_report.txt     (human-readable, for .docx notes)
-
-Usage:
-  python compute_angle_metrics.py [--subject A|B|both]
-
-Dependencies: scikit-image, tensorflow (already in requirements.txt)
-"""
-
 import sys, json, argparse, warnings
 import numpy as np
 from pathlib import Path
@@ -39,7 +20,7 @@ try:
     HAS_SKIMAGE = True
 except ImportError:
     HAS_SKIMAGE = False
-    print("[warn] scikit-image not installed - SSIM disabled. Run: pip install scikit-image")
+    print("[warn] scikit-image not installed, SSIM disabled. Run: pip install scikit-image")
 
 # ── ResNet50 embedding ────────────────────────────────────────────────────────
 try:
@@ -68,7 +49,7 @@ try:
     HAS_TF = True
 except ImportError:
     HAS_TF = False
-    print("[warn] tensorflow not installed - embedding similarity disabled.")
+    print("[warn] tensorflow not installed, embedding similarity disabled.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -129,7 +110,7 @@ def collect_samples(test_dir: Path, angle: str, n: int) -> list[Path]:
 def score_angle(hero_front: Path, seed: Path, test_dir: Path, angle: str) -> dict:
     """
     SSIM measured vs hero_front (same-crop structural baseline).
-    EMB_SIM measured vs Pinterest seed (true identity ground truth - model-neutral).
+    EMB_SIM measured vs Pinterest seed (true identity ground truth, model-neutral).
     Using seed for EMB_SIM removes the flux-2 bias from using flux-2 front as sole reference.
     """
     samples = collect_samples(test_dir, angle, N_MAX)
@@ -168,7 +149,7 @@ def score_angle(hero_front: Path, seed: Path, test_dir: Path, angle: str) -> dic
 def score_hero_fronts(seed: Path, flux_front: Path, gpt2_front: Path) -> dict:
     """
     Step 1: seed → hero front for each model.
-    EMB_SIM only - SSIM not meaningful across different photos/crops.
+    EMB_SIM only, SSIM not meaningful across different photos/crops.
     """
     results = {}
     for model, front in [("flux2", flux_front), ("gpt2", gpt2_front)]:
@@ -183,7 +164,7 @@ def score_hero_fronts(seed: Path, flux_front: Path, gpt2_front: Path) -> dict:
 def run_subject(subject_id: str, cfg: dict) -> dict:
     hero_front = cfg["hero_front"]
     if not hero_front.exists():
-        print(f"[skip] Subject {subject_id}: hero_front.png not found - run generation first.")
+        print(f"[skip] Subject {subject_id}: hero_front.png not found, run generation first.")
         return {}
 
     print(f"\n{'='*60}  Subject {subject_id}")
@@ -196,7 +177,7 @@ def run_subject(subject_id: str, cfg: dict) -> dict:
     results["_hero_front_capture"] = front_scores
     f2_cap = front_scores["flux2"]["emb_sim"]
     g2_cap = front_scores["gpt2"]["emb_sim"]
-    print(f"\n  Step 1 - seed → hero front (identity capture)")
+    print(f"\n  Step 1, seed → hero front (identity capture)")
     if f2_cap and g2_cap:
         winner = "flux-2" if f2_cap > g2_cap else "gpt-2"
         print(f"    EMB_SIM   flux={f2_cap:.4f}   gpt2={g2_cap:.4f}   → {winner} captured seed better")
@@ -241,13 +222,13 @@ def write_reports(all_results: dict):
         cap = s_results.get("_hero_front_capture", {})
         f2c = cap.get("flux2", {}).get("emb_sim")
         g2c = cap.get("gpt2", {}).get("emb_sim")
-        lines.append(f"\n  Step 1 - Seed → Hero Front (identity capture from Pinterest ref)")
+        lines.append(f"\n  Step 1, Seed → Hero Front (identity capture from Pinterest ref)")
         if f2c and g2c:
             winner = "flux-2" if f2c > g2c else "gpt-2"
             lines.append(f"  EMB_SIM:  flux={f2c:.4f}   gpt2={g2c:.4f}   >> {winner} captured seed better")
         lines.append("")
 
-        lines.append(f"  Steps 2+3 - Angle shots (EMB_SIM vs seed | SSIM vs hero_front)")
+        lines.append(f"  Steps 2+3, Angle shots (EMB_SIM vs seed | SSIM vs hero_front)")
         for angle, scores in s_results.items():
             if angle.startswith("_"): continue
             f2 = scores["flux2"]
@@ -272,7 +253,7 @@ def write_reports(all_results: dict):
     # ── DOCX CHECKPOINT ──────────────────────────────────────────────────────
     print(f"""
 ╔══════════════════════════════════════════════════════════════╗
-║  DOCX CHECKPOINT - metrics computed, time to write your notes ║
+║  DOCX CHECKPOINT, metrics computed, time to write your notes ║
 ╚══════════════════════════════════════════════════════════════╝
 
 Open reports/comparison_report.txt, then open your .docx.
@@ -310,7 +291,7 @@ def main():
     if all_results:
         write_reports(all_results)
     else:
-        print("\nNo results to report - generate images first.")
+        print("\nNo results to report, generate images first.")
 
 
 if __name__ == "__main__":

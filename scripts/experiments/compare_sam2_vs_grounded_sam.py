@@ -1,19 +1,3 @@
-"""
-compare_sam2_vs_grounded_sam.py - SAM2 alone (manual point) vs Grounding DINO
-+ SAM2 ("Grounded-SAM", auto text-prompted box) on the same test image.
-
-Test image: the real Mullay jacket photo (already has known-good coordinates
-from the manual color-threshold masking done earlier this session, useful as
-a sanity baseline to compare against).
-
-Approach A - SAM2 alone: give it ONE manual point (hand-picked, same kind of
-  manual coordinate work done all session via connected-components).
-Approach B - Grounded-SAM: text prompt ("red logo text") -> Grounding DINO
-  box -> SAM2 mask. Zero manual coordinates.
-
-Saves both masks + overlays for visual comparison.
-"""
-
 import sys
 import numpy as np
 from pathlib import Path

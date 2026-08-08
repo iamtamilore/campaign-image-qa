@@ -1,21 +1,3 @@
-"""
-run_advanced_experiments.py - High-H1 evaluation depth (Rubric: Methodology 30% + Evaluation 20%).
-
-Four experiments, all local/GPU, no Kie.ai credits. Saves incrementally so a
-failure in one experiment never loses the others.
-
-  EXP 1 - SAMPLING METHODS: repeated stratified splits (5 seeds = Monte-Carlo CV).
-          Reports mean±std of P/R/F1/ROC-AUC → "rich understanding of performance".
-  EXP 2 - DISTANCE METRIC: L1 vs Euclidean vs cosine head (resolves proposal-vs-build
-          mismatch: proposal promised Euclidean, build used L1).
-  EXP 3 - ABLATION LADDER + McNEMAR: raw-pixel distance vs embedding distance vs
-          Siamese (threshold-free ROC-AUC ladder) + McNemar's test (proposal ref [9]).
-  EXP 4 - NEGATIVE SAMPLING: hard (angle-matched cross-subject) vs random negatives
-          (proves the "matched to prevent style shortcuts" claim).
-
-Output: outputs/results/advanced_experiments.json
-"""
-
 import json, time, warnings, random
 import numpy as np
 from pathlib import Path
@@ -90,7 +72,7 @@ def train_eval(train_p, val_p, test_p, model, epochs=40):
     return m, y, p
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 1 - SAMPLING METHODS: repeated stratified splits (Monte-Carlo CV)
+# EXP 1, SAMPLING METHODS: repeated stratified splits (Monte-Carlo CV)
 # ══════════════════════════════════════════════════════════════════════════════
 def exp1():
     log("EXP 1: repeated stratified splits across 5 seeds...")
@@ -115,7 +97,7 @@ def exp1():
     save(); log("EXP 1 saved.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 2 - DISTANCE METRIC: L1 vs Euclidean vs cosine
+# EXP 2, DISTANCE METRIC: L1 vs Euclidean vs cosine
 # ══════════════════════════════════════════════════════════════════════════════
 class L2Distance(tf.keras.layers.Layer):
     def call(self, t):
@@ -154,7 +136,7 @@ def exp2():
     save(); log("EXP 2 saved.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 3 - ABLATION LADDER (raw pixels → embeddings → Siamese) + McNemar
+# EXP 3, ABLATION LADDER (raw pixels → embeddings → Siamese) + McNemar
 # ══════════════════════════════════════════════════════════════════════════════
 def flat_pixel_dist(pairs, size=(64,64)):
     d = []
@@ -170,11 +152,11 @@ def exp3():
     test = ds.test_pairs
     y = np.array([int(p["label"]) for p in test])
 
-    # rung 1 - raw pixel distance (lower dist = more similar → score = -dist)
+    # rung 1, raw pixel distance (lower dist = more similar → score = -dist)
     pix_d = flat_pixel_dist(test)
     auc_pixel = round(roc_auc_score(y, -pix_d), 4)
 
-    # rung 2 - raw ResNet50 embedding distance (no metric learning)
+    # rung 2, raw ResNet50 embedding distance (no metric learning)
     from src.models.backbone import get_embedding_model
     emb = get_embedding_model()
     def embed(paths):
@@ -183,14 +165,14 @@ def exp3():
     emb_d = np.linalg.norm(ea-eb, axis=1)
     auc_emb = round(roc_auc_score(y, -emb_d), 4)
 
-    # rung 3 - Siamese (frozen backbone, the built model)
+    # rung 3, Siamese (frozen backbone, the built model)
     sm = tf.keras.models.load_model("outputs/models/siamese_best.keras",
             custom_objects={"L2Normalize": L2Normalize, "L1Distance": L1Distance})
     _, prob_siam = score_pairs(sm, test)
     auc_siam = round(roc_auc_score(y, prob_siam), 4)
     pred_siam = (prob_siam >= 0.5).astype(int)
 
-    # rung 4 - Siamese with fine-tuned (unfrozen) backbone
+    # rung 4, Siamese with fine-tuned (unfrozen) backbone
     net_ft = build_embedding_network(embedding_dim=128, trainable_backbone=True)
     ia, ib = Input((224,224,3), name="input_a"), Input((224,224,3), name="input_b")
     d = L1Distance()([net_ft(ia), net_ft(ib)])
@@ -237,7 +219,7 @@ def exp3():
                 f"McNemar p={pval:.4g}")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXP 4 - NEGATIVE SAMPLING: hard (angle-matched) vs random
+# EXP 4, NEGATIVE SAMPLING: hard (angle-matched) vs random
 # ══════════════════════════════════════════════════════════════════════════════
 def build_pairs_custom(strategy, n_per_class=300, seed=42):
     """Positives = same subject. Negatives = cross-subject, either angle-matched

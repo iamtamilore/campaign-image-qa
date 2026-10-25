@@ -1,5 +1,14 @@
 import os, sys, time, json, requests
 from pathlib import Path
+
+# Vendored call log. If it cannot be imported the client still works; only the
+# log line is lost.
+try:
+    from prompt_logger import log_request
+except ImportError:  # pragma: no cover
+    def log_request(*a, **k):
+        pass
+
 #The main address where Kie.ai lives
 BASE_URL = "https://api.kie.ai"
 #catbox holds files temporarily for free
@@ -79,4 +88,6 @@ class KieClient:
         #send the task to kia.ai, get back a task ID
         task_id = self._create_task(payload)
         print(f"[kie] flux-2 hero task, {task_id}, costs around (~5 credits)")
+        log_request(task_id, payload["model"], "hero_task", prompt,
+                    input_urls=input_urls, input_params=payload["input"])
         return task_id

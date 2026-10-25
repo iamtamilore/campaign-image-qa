@@ -1,6 +1,18 @@
 import os, sys, time, json, requests
 from pathlib import Path
 
+# The call log is research evidence, so it is vendored into the repo rather than
+# expected to live on one machine. If it cannot be imported the pipeline still
+# runs; only the log line is lost.
+try:
+    from prompt_logger import log_request, log_result
+except ImportError:  # pragma: no cover
+    def log_request(*a, **k):
+        pass
+
+    def log_result(*a, **k):
+        pass
+
 #the main address where kie.ai lives
 BASE_URL = "https://api.kie.ai"
 
@@ -101,6 +113,8 @@ class HeroGenerator:
         #send the task to kie.ai, get back a task ID
         task_id = self._post(payload)
         print(f"[gpt-image-2-i2i] task → {task_id}  (~6cr)")
+        log_request(task_id, payload["model"], "gpt_i2i", prompt,
+                    input_urls=ref_urls, input_params=payload["input"])
         return task_id
 
     #order an image from flux-2, my main model for face lock + angle variants
@@ -127,6 +141,8 @@ class HeroGenerator:
         #send the task to kie.ai, get back a task ID
         task_id = self._post(payload)
         print(f"[flux-2] task → {task_id}  (~5cr)")
+        log_request(task_id, payload["model"], "flux_angle", prompt,
+                    input_urls=[ref_url], input_params=payload["input"])
         return task_id
 
     #DRESS SUBJECT IN A REAL GARMENT, Condition B's validated recipe (Rule 9)
@@ -162,6 +178,9 @@ class HeroGenerator:
         }
         task_id = self._post(payload)
         print(f"[flux-2 dress] task → {task_id}  (~5cr)")
+        log_request(task_id, payload["model"], "garment_dress", prompt,
+                    input_urls=[subject_ref_url, garment_ref_url],
+                    input_params=payload["input"])
         return task_id
 
     #POLL + DOWNLOAD
@@ -210,8 +229,22 @@ class HeroGenerator:
 
     #shortcut: wait for the task then download it, one call
     def run(self, task_id: str, out_path: Path) -> Path:
-        result = self.poll(task_id)
-        return self.download(result, out_path)
+        t0 = time.time()
+        try:
+            result = self.poll(task_id)
+        except Exception as e:
+            log_result(task_id, "fail", fail_reason=str(e),
+                       duration_seconds=time.time() - t0)
+            raise
+        saved = self.download(result, out_path)
+        result_json = json.loads(result.get("resultJson") or "{}")
+        urls = result_json.get("resultUrls") or result_json.get("images") or []
+        log_result(task_id, "success",
+                   credits_consumed=result.get("creditsConsumed"),
+                   output_url=urls[0] if urls else None,
+                   local_output_path=str(saved),
+                   duration_seconds=time.time() - t0)
+        return saved
 
     #IDENTITY SPEC + ANGLE PROMPTS
 

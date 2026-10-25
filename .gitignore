@@ -4,3 +4,8 @@ data/subject_A/
 data/subject_B/
 outputs/models/
 *.odt
+logs/
+prompt_json.log
+
+__pycache__/
+*.pyc
